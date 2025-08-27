@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Utility: glowing shadows on focus for buttons/inputs look better with a subtle transition */
+:root {
+  color-scheme: dark;
+}
+
+/* background grid helper using CSS var names from tailwind extension */
+.bg-grid-cyan-500\/10 {
+  background-image: radial-gradient(
+    circle at 1px 1px,
+    rgba(34, 211, 238, 0.1) 1px,
+    transparent 1px
+  );
+  background-size: 22px 22px;
+}
+
+/* scrollbar styling for chat window */
+.scrollbar-thin::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: rgba(0, 245, 255, 0.3);
+  border-radius: 8px;
+}
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
